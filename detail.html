@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Details</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+    .back {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      padding: 10px 16px;
+      border: 1px solid #fff;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .detail-wrap {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 24px;
+    }
+    .poster img {
+      width: 100%;
+      height: 420px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+    .meta h1 {
+      margin: 0 0 10px;
+      color: #fff;
+    }
+    .sub {
+      color: #bbb;
+      margin-bottom: 15px;
+    }
+    .desc {
+      color: #ccc;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .btn-primary {
+      background: #e50914;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 8px;
+    }
+    @media(max-width:768px){
+      .detail-wrap{
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="back" href="index.html">← Back</a>
+  <div class="detail-wrap" id="movieDetail"></div>
+
+  <script src="data.js" defer></script>
+  <script src="detail.js" defer></script>
+</body>
+</html>
