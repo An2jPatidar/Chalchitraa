@@ -6,7 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>चलचित्र– Download TV Shows Online, Download Movies Online</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFP5C7P6WT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GFP5C7P6WT');
+</script>
 
 <body>
   <div class="main">
@@ -14,22 +24,70 @@
       <img width="53" src="/images/mainlogo.png" class="logo" alt=""></span>
       <input type="text" placeholder="Search">
       <button class="btn btn-red">Search</button>
-    </nav>
+    </nav>  
     <h2 class="row-title">Trending Now</h2>
     <div class="row" id="trendingRow">
       <button class="row-btn prev" aria-label="Previous">&#10094;</button>
       <div class="row-track" id="trendingTrack"></div>
       <button class="row-btn next" aria-label="Next">&#10095;</button>
-    </div>
+    </div> 
 
     <div class="box">
     </div>
   </div>
   <h2 style="text-align:center; margin-bottom:20px; ">All Movies</h2>
-  <div class="product-grid" id="productGrid"></div>
-  <script src="app.js" defer></script>
-  <script src="data.js" defer></script>
 
+  <!-- 🎬 GENRE FILTER BAR -->
+<div class="genre-bar" id="genreBar">
+  <button class="genre-btn active" data-genre="all" type="button">All</button>
+  <button class="genre-btn" data-genre="Action" type="button">Action</button>
+  <button class="genre-btn" data-genre="Thriller" type="button">Thriller</button>
+  <button class="genre-btn" data-genre="Comedy" type="button">Comedy</button>
+  <button class="genre-btn" data-genre="Sci-Fi" type="button">Sci-Fi</button>
+  <button class="genre-btn" data-genre="Family/Drama" type="button">Family/Drama</button>
+  <button class="genre-btn" data-genre="Epic" type="button">Epic</button>
+  <button class="genre-btn" data-genre="Crime/Drama" type="button">Crime/Drama</button>
+</div>
+
+  <div class="product-grid" id="productGrid"></div>
+  <div id="pagination" class="pagination"></div>
+
+  <footer class="footer">
+    <div class="footer-container">
+    <div class="footer-about">
+      <h2>ChalChitra</h2>
+      <p>
+        Download your favorite movies in HD quality.  
+        Stay entertained — anytime, anywhere.
+      </p>
+    </div>
+    <div class="footer-disclaimer">
+      <h3>Disclaimer</h3>
+      <p>
+        ChalChitra does not host any files on its servers.  
+        All content is provided by non-affiliated third parties.
+      </p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Request Us</h3>
+      <div class="social-icons">
+        <a href="http://t.me//chalchitra69"><i class="fa fa-telegram"></i></a>
+        <a href="https://t.me//chalchitra69_2"><i class="fa fa-telegram"></i></a>
+        <a href="https://www.instagram.com/chalchitra.69?igsh=MXJkN3A5NDZ3eXNqbA=="><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 ChalChitra | All Rights Reserved</p>
+  </div>
+</footer>
+  </footer>
+  
+
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  
 </body>
 
 

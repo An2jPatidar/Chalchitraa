@@ -17,14 +17,16 @@ function renderMovie(movie) {
     </div>
     <div class="meta">
       <h1>${movie.title}</h1>
-      <div class="sub">${movie.year} • ${movie.genre} • ${movie.duration}</div>
+      <div class="sub">${movie.year} • ${movie.genre} • ${movie.quality}</div>
       <div class="desc">${movie.description}</div>
       <div class="dl-grid">
         ${movie.downloads.map(d => `
           <a class="btn btn-primary" href="${d.url}" target="_blank" rel="noopener">
             Download ${d.label}
           </a>
+          
         `).join("")}
+        
       </div>
     </div>
   `;
