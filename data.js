@@ -427,13 +427,3 @@ document.addEventListener("DOMContentLoaded", () => {
   renderTrending(TRENDING);
 });
 
-function saveMovies(id, title, year) {
-  localStorage.setItem("moviesData", JSON.stringify(MOVIES));
-  let mv = {
-    id : id,
-    title : title,
-    year : year
-  }
-  MOVIES.unshift(mv)
-  // console.log("💾 Movies saved to localStorage:", MOVIES);
-}
